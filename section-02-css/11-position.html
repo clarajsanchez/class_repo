@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+
+    <style>
+        body{
+            height: 4000px;
+        }
+
+        img{
+            width: 180px;
+        }
+
+        section div:nth-child(2) img{
+            position: absolute;
+            right: 0;
+        }
+
+        section div:nth-child(3) img{
+            position: absolute;
+            bottom: 0;
+        }
+
+        section div:last-child img{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+
+        section div{
+            width: 200px;
+            height: 200px;
+        }
+
+        section{
+            width: 500px;
+            height: 500px;
+            background: #333;
+            position: relative;
+        }
+
+        section div:first-child{
+            background: red;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        section div:nth-child(2){
+            background: yellow;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        section div:nth-child(3){
+            background: green;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+        section div:last-child{
+            background: blue;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    
+    <section class="container">
+        <div id="box-1" class="box">
+            <img id="img1" src="./assets/bbyBernese.jfif" alt="Bernese">
+        </div>
+        <div id="box-2" class="box">
+            <img id="img2" src="./assets/bbyPanda.jfif" alt="Panda">
+        </div>
+        <div id="box-3" class="box">
+            <img id="img3" src="./assets/bbySeal.jfif" alt="Seal">
+        </div>
+        <div id="box-4" class="box">
+            <img id="img4" src="./assets/snowLeopard.jfif" alt="Snow Leopard">
+        </div>
+    </section>
+</body>
+</html>

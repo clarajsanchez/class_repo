@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float & Align</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.4em;
+        }
+        .container{
+            max-width: 960px;
+            margin: 30px auto;
+        }
+        .box{
+            background: #f4f4f4;
+            border: solid 1px #000;
+            padding: 20px;
+            margin: 0 0 10px 0;
+        }
+        .box p{
+            text-align: justify;
+        }
+        #box-2{
+            float: left;
+            width: 70%;
+        }
+        #box-3{
+            float: right;
+            width: 30%;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box-1">
+            <h3>Heading of my website</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non ad culpa fugit numquam totam tempore dolore deleniti dolorem deserunt quos nostrum impedit aperiam aliquam dicta sunt eveniet, hic dolores pariatur.</p>
+        </div>
+        <div class="box" id="box-2">
+            <h3>Blog Posts</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis ipsa mollitia provident, pariatur repellat dolor nobis illum numquam quae fugiat consequatur velit veritatis qui reiciendis sit! Nesciunt voluptatem repellat molestiae.</p>
+        </div>
+        <div class="box" id="box-3">
+            <h3>Recents Projects</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem perspiciatis doloremque, ut magnam id aperiam ab omnis quisquam reprehenderit quibusdam quos laboriosam eaque officia, totam fugit. Sunt dolore repellendus similique.</p>
+        </div>
+        <div class="box" id="box-4">
+            <h3>Footer of my website</h3>
+            <a href="">Check out my linkedin!</a>
+        </div>
+    </div>
+</body>
+</html>

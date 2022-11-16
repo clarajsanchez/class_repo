@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: grid;
+            grid-template-columns: 20% 40% 30%;
+            column-gap: 5%;
+            background-color: rgb(228, 228, 228);
+            margin: 0;
+        }
+
+        #sec1{
+            width: 150px;
+            padding: 8px;
+            background-color: #fff;
+        }
+
+        .item{
+            display: flex;
+            align-items: center;
+            padding: 8px 2px;
+        }
+        .item i{
+            padding: 8px;
+        }
+
+        .container{
+            margin: 5px;
+            padding: 9px 0;
+        }
+
+        #sec2{
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+        .stories{
+            display: flex;
+            font-size: 13px;
+            justify-content: center;
+            background-color: #fff;
+            padding: 10px;
+        }
+        .story{
+            padding: 3px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;            
+        }
+        .story i{
+            padding-bottom: 6px;
+        }
+    </style>
+</head>
+<body>
+    <section id="sec1">
+        <h2>Instagram</h2>
+        <div class="container">
+            <div class="item">
+                <i class="fa-solid fa-house"></i>
+                <h5>Home</h5>
+            </div>
+            <div class="item">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <h5>Search</h5>
+            </div>
+            <div class="item">
+                <i class="fa-regular fa-compass"></i>
+                <h5>Explore</h5>
+            </div>
+            <div class="item">
+                <i class="fa-regular fa-paper-plane"></i>
+                <h5>Messages</h5>
+            </div>
+            <div class="item">
+                <i class="fa-regular fa-heart"></i>
+                <h5>Notifications</h5>
+            </div>
+            <div class="item">
+                <i class="fa-regular fa-square-plus"></i>
+                <h5>Create</h5>
+            </div>
+            <div class="item">
+                <i class="fa-solid fa-user"></i>
+                <h5>Profile</h5>
+            </div>            
+        </div>
+        <div class="item">
+            <i class="fa-solid fa-bars"></i>
+            <h5>More</h5>
+        </div>
+    </section>
+    <section id="sec2">
+        <div class="stories">
+            <div class="story">
+                <i class="fa-solid fa-circle-user"></i>
+                <p>username</p>
+            </div>
+            <div class="story">
+                <i class="fa-solid fa-circle-user"></i>
+                <p>username</p>
+            </div>
+            <div class="story">
+                <i class="fa-solid fa-circle-user"></i>
+                <p>username</p>
+            </div>
+            <div class="story">
+                <i class="fa-solid fa-circle-user"></i>
+                <p>username</p>
+            </div>
+            <div class="story">
+                <i class="fa-solid fa-circle-user"></i>
+                <p>username</p>
+            </div>
+        </div>
+        <div class="post">
+            <div class="name"></div>
+            <div class="pic"></div>
+        </div>
+    </section>
+    <section id="sec3">section3</section>
+</body>
+</html>

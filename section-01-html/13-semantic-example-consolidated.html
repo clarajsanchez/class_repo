@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Site</title>
+    <!-- CSS -->
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            color: #333;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.4rem;
+        }
+        ul{
+            padding: 0;
+            list-style: none;
+        }
+
+        #header{
+            margin-bottom: 15px;
+            background: #333;
+            color: white;
+            padding: 10px;
+        }
+        #main{
+            float: left;
+            width: 69%;
+        }
+        #sidebar{
+            float: right;
+            width: 29%;
+        }
+
+        .clr{
+            clear: both;
+        }
+
+        #footer{
+            background: #333;
+            color: white;
+            padding: 10px;
+        }
+
+        .card{
+            background: #f4f4f4;
+            padding: 20px;
+            margin-bottom: 10px;
+            border: solid 1px black;
+        }
+
+        .text-center{
+            display: block;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header id="header" class="card text-center">
+        <h1>My website</h1>
+        <p>Another website</p>
+    </header>
+    <main id="main">
+        <!-- Welcome section -->
+        <section id="welcome" class="card">
+            <h2>Welcome to our website</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias recusandae facere illo, quis omnis saepe vel commodi necessitatibus, dolore asperiores quae dolorum nulla! Perspiciatis eligendi voluptatum nisi similique enim nobis? <br>
+                <a href="#" class="text-center">Click for more</a>
+            </p>
+        </section>
+        <!-- Blog section -->
+        <section>
+            <h2>From Our Blog</h2>
+            <article class="article">
+                <h3>Article 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde corporis, aliquid ratione consequuntur, voluptates quisquam non cupiditate eum, itaque accusantium ea delectus in laboriosam? Numquam eveniet fugit fugiat dignissimos cumque!</p>
+            </article>
+            <article >
+            <article class="article">
+                <h3>Article 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde corporis, aliquid ratione consequuntur, voluptates quisquam non cupiditate eum, itaque accusantium ea delectus in laboriosam? Numquam eveniet fugit fugiat dignissimos cumque!</p>
+            </article>
+        </section>
+    </main>
+    <aside id="sidebar" class="card">
+        <h3>Navigation</h3>
+        <nav>
+            <ul id="main-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <button>Contact Us</button>
+        <ul>
+            <li><strong>Adress: </strong>1234 Abbery Road, London, 08012, UK</li>
+            <li><strong>Phone: </strong>+49 1234 - 1234</li>
+            <li><strong>Email: </strong>info@abbeyroadstudios.uk</li>
+        </ul>
+    </aside>
+    <div class="clr"></div>
+    <footer id="footer">
+        <p class="text-center">Copyright &copy; Clara 2022</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            position: relative;
+        }
+
+        .note{
+            background: yellow;
+            padding: 4px;
+        }
+
+        .note h4{
+            margin: 0.5rem;
+            text-align: center;
+        }
+
+        .header{
+            padding: 20px;
+            text-align: center;
+            background: #356473;
+            color: white;
+        }
+
+        .navbar{
+            display: flex;
+            background: #333;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+
+        .navbar a{
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .navbar a:hover{
+            background: #ddd;
+            color: black;
+        }
+
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .side{
+            flex: 30%;
+            background: #f1f1f1;
+            padding: 20px;
+        }
+
+        .main{
+            flex: 70%;
+            background: #fafafa;
+            padding: 20px;
+        }
+
+        .fakeing{
+            background: #aaa;
+            width: 100%;
+            padding: 20px;
+            height: 200px;
+        }
+
+        .fakeing-2{
+            background: #aaa;
+            width: 100%;
+            padding: 20px;
+            height: 60px;
+        }
+
+        .footer{
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+        }
+
+        @media (max-width: 700px){
+            .row,
+            .navbar{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="note">
+        <h4>Mueve la pantalla para ver los efectos</h4>
+    </div>
+
+    <div class="header">
+        <h1>My Website</h1>
+        <p>with a flexible <b>media query</b> layout</p>
+    </div>
+
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Three</a>
+        <a href="#">Four</a>
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <h2>About Me: </h2>
+            <div class="fakeing"></div>
+            <p>Some text about myself</p>
+            <h3>More text</h3>
+            <p>My pictures</p>
+            <div class="fakeing-2">Image</div>
+            <br>
+            <div class="fakeing-2">Image</div>
+            <br>
+            <div class="fakeing-2">Image</div>
+            <br>
+        </div>
+        <div class="main">
+            <h2>Title heading</h2>
+            <h5>Title description</h5>
+            <div class="fakeing">Image</div>
+            <p>Some text</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, nobis. Provident, quae a accusamus, expedita eos sint nobis impedit minima, odio accusantium aspernatur commodi? Assumenda delectus doloremque asperiores praesentium molestiae?</p>
+            <br>
+            <h2>Title heading</h2>
+            <h5>Title description</h5>
+            <div class="fakeing">Image</div>
+            <p>Some text</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, nobis. Provident, quae a accusamus, expedita eos sint nobis impedit minima, odio accusantium aspernatur commodi? Assumenda delectus doloremque asperiores praesentium molestiae?</p>
+            <br>
+            <h2>Title heading</h2>
+            <h5>Title description</h5>
+            <div class="fakeing">Image</div>
+            <p>Some text</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, nobis. Provident, quae a accusamus, expedita eos sint nobis impedit minima, odio accusantium aspernatur commodi? Assumenda delectus doloremque asperiores praesentium molestiae?</p>
+        </div>
+    </div>
+</body>
+</html>

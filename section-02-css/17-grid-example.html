@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+
+    <style>
+        .container{
+            outline: 1px solid red;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(12, 50px [col-start]);
+            grid-template-rows: repeat(12, 50px [row-start]);
+            grid-gap: 2px;
+        }
+
+        .container div{
+            background-color: rgb(101, 204, 213);
+        }
+    </style>
+</head>
+<body class="container">
+    <div>One</div>
+    <div>Two</div>
+    <div>Three</div>
+    <div>Four</div>
+    <div>Five</div>
+    <div>Item</div>
+    <div>Item</div>
+    <div>Item</div>
+    <div>Item</div>
+    <div>Item</div>
+    <div>Item</div>
+    <div>Item</div>
+    <div>Item</div>
+    <div>Item</div>
+    <div>Item</div>
+    <div>Item</div>
+    <div>Item</div>
+    <div>Item</div>
+</body>
+</html>
