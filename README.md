@@ -4,6 +4,52 @@ Este es un repositorio con notas y ejemplos sobre HTML y CSS
 Creado por Clara Jiménez :smiling_face_with_three_hearts:
 <p/>
 
+## 16/11
+JavaScript, manipulación de DOM. Realización del laboratorio de Funciones y Arrays.
+
+
+Algunos métodos de DOM manipulation:
+
+`getElementById()` La forma más común de acceder a un elemento HTML es utilizar el id del elemento.
+```bash
+$ console.log(document.getElementById("wutang"));
+```
+`getElementsByClassName()` Este método devuelve una colección de todos los elementos del documento con el nombre de clase especificado.
+```bash
+console.log(document.getElementsByClassName("wuTang"));
+console.log(document.getElementsByClassName("wuTang")[1]);
+```
+`getElementsByTagName()`
+```bash
+cosas
+```
+`querySelector()`
+```bash
+cosas
+```
+`querySelectorAll()`
+```bash
+cosas
+```
+
+`createElement()`
+```bash
+cosas
+```
+`createElement.innerHTML`
+```bash
+cosas
+```
+`appendChild()`
+```bash
+cosas
+```
+`createElement.className`
+```bash
+cosas
+```
+
+
 ### Estructura de la carpeta
 - Labs
 	- CSS
