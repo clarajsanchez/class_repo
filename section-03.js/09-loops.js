@@ -16,4 +16,4 @@ for (let i = 0; i < arr.length; i++){
 let array = ["Taylor Swift", "Rafa Nadal", "Bad Bunny"];
 for (let i = 0; i < array.length; i++) { 
     console.log(`${array[i]} is so famous, I love them.`);
-}
+} 

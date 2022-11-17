@@ -143,8 +143,6 @@ function uniquifyArray(arr) {
       exists = false;
     }
   } else uniques = null;
-  console.log(arr);
-  console.log(uniques);
   return uniques;
 }
 
@@ -153,7 +151,17 @@ function uniquifyArray(arr) {
 // Iteration #6: Find elements
 const wordsFind = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', 'truth', 'disobedience'];
 
-function doesWordExist() {}
+function doesWordExist(arr, word) {
+  let doesExist = false;
+  if (arr.length > 0) {
+    for (let i = 0; i < arr.length; i++){
+      if (arr[i] == word) {
+        doesExist = true;
+      }
+    }
+  } else return null;
+  return doesExist;
+}
 
 
 
@@ -172,7 +180,17 @@ const wordsCount = [
   'matter'
 ];
 
-function howManyTimes() {}
+function howManyTimes(arr, word) {
+  let cont = 0;
+  if (arr.length > 0) {
+    for (let i = 0; i < arr.length; i++){
+      if (arr[i] == word) {
+        cont++;
+      }
+    }
+  }
+  return cont;
+}
 
 
 
