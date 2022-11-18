@@ -63,9 +63,13 @@ Browser events:
 - Touch Events:
 	- 
 - Keyboard Events: 
+	-
 - Form Events: 
+	-
 - Window Events:
+	-
 - Event Handlers:
+	-
 
 
 ### Estructura de la carpeta
