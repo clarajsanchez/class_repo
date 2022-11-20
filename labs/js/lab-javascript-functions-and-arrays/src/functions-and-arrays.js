@@ -90,7 +90,7 @@ function averageWordLength(arr) {
   return avr;
 }
 
-// Bonus - Iteration #4.1
+// Bonus - Iteration #4.3
 function avg(arr) {
   let sum = 0;
   if (arr.length > 0) {
