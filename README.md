@@ -14,40 +14,65 @@ Algunos métodos de DOM manipulation:
 ```bash
 $ console.log(document.getElementById("wutang"));
 ```
+
 `getElementsByClassName()` Este método devuelve una colección de todos los elementos del documento con el nombre de clase especificado.
 ```bash
-console.log(document.getElementsByClassName("wuTang"));
-console.log(document.getElementsByClassName("wuTang")[1]);
-```
-`getElementsByTagName()`
-```bash
-cosas
-```
-`querySelector()`
-```bash
-cosas
-```
-`querySelectorAll()`
-```bash
-cosas
+$ console.log(document.getElementsByClassName("wuTang"));
+$ console.log(document.getElementsByClassName("wuTang")[1]);
 ```
 
-`createElement()`
+`getElementsByTagName()` Este método acepta un nombre de etiqueta y devuelve todos los elementos del nombre de etiqueta especificado en el orden en que aparecen en el documento.
 ```bash
-cosas
+$ console.log(document.getElementsByTagName("h5"));
+$ console.log(document.getElementsByTagName("h5")[0]);
 ```
-`createElement.innerHTML`
+
+`querySelector()` Devuelve el primer valor que coincida con el selector que se le da. Este método puede aceptar todos los selectores de estilo CSS, lo que le permite seleccionar por etiqueta, clase o ID.
 ```bash
-cosas
+$ console.log(document.querySelector("#query-selector"));
+$ console.log(document.querySelector(".hipHop"));
+$ console.log(document.querySelector("h5"));
+$ console.log(document.querySelector("body"));
+$ console.log(document.querySelector("#query-selector .hipHop .myLove"));
 ```
-`appendChild()`
+
+`querySelectorAll()` Funciona de forma similar a la anterior, que devuelve una colección de listas de nodos con todos los elementos coincidentes.
 ```bash
-cosas
+$ console.log(document.querySelectorAll(".wuTang"));
 ```
-`createElement.className`
+
+`createElement()` El código en HTML con el ID de #parent muestra un elemento padre con 5 elementos hijos. Supongamos que queremos añadir otra etiqueta div con JavaScript. Definitivamente tendríamos que crear un nuevo elemento con el método createElement(), así:
 ```bash
-cosas
+const createElement = document.createElement("div");
+console.log("createElemente tiene esta estructura: ");
+console.log(createElement);
 ```
+
+`createElement.innerHTML` Establecer algun texto mediante unos keys de innerHTML o innerTEXT
+```bash
+createElement.innerHTML = "JS es demasiado cool!";
+createElement.innerText = "JS es demasiado cool";
+console.log(createElement);
+```
+
+
+`appendChild()` Anexar elemento creado en js al doc de HTML
+```bash
+Version - un solo selector
+let parentElement = document
+  .querySelector("#parent")
+  .appendChild(createElement);
+Version - anidada
+let parentElement2 = document
+  .querySelector("#parent #firstchild")
+  .appendChild(createElement);
+```
+
+`createElement.className` Añadir clase mediante JS
+```bash
+createElement.className = "ejemplo1";
+```
+
 
 ## 17/11
 Browser events
@@ -66,13 +91,20 @@ Browser events
 	- touchend
 	- touchcancel
 - Keyboard Events: 
-	-
+	- keydown
+	- keypress
+	- keyup
 - Form Events: 
-	-
+	- focus
+	- blur
+	- change
+	- submit
 - Window Events:
-	-
-- Event Handlers:
-	-
+	- scroll
+	- resize
+	- hashchange
+	- load
+	- unload
 
 
 ### Estructura de la carpeta
