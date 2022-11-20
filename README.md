@@ -49,6 +49,31 @@ cosas
 cosas
 ```
 
+## 17/11
+Browser events
+- Mouse events:
+	- click
+	- dblclick
+	- mousemove
+	- mouseover
+	- mousewheel
+	- mouseout
+	- mousedown	
+	- mouseup
+- Touch Events:
+	- touchstart
+	- touchmove
+	- touchend
+	- touchcancel
+- Keyboard Events: 
+	-
+- Form Events: 
+	-
+- Window Events:
+	-
+- Event Handlers:
+	-
+
 
 ### Estructura de la carpeta
 - Labs
