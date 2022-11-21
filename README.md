@@ -106,8 +106,70 @@ Browser events
 	- load
 	- unload
 
+## 18/11
+Promesas. Async functions. Callbacks. Eventos.
 
-### Estructura de la carpeta
+
+### Promise
+Una Promesa (`Promise`) es un proxy de un valor que no necesariamente se conoce cuando se crea la promesa. Le permite asociar controladores con el valor eventual de éxito o el motivo de falla de una acción asíncrona.
+```bash
+const myPromise = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve('foo');
+  }, 300);
+});
+
+myPromise
+  .then(handleResolvedA, handleRejectedA)
+  .then(handleResolvedB, handleRejectedB)
+  .then(handleResolvedC, handleRejectedC);
+
+```
+
+### Async functions
+La declaración de función async define una función asíncrona, la cual devuelve un objeto AsyncFunction. Cuando se llama a una función async, esta devuelve un elemento `Promise`. Una función async puede contener una expresión `await`, la cual pausa la ejecución de la función asíncrona y espera la resolución de la Promise pasada y, a continuación, reanuda la ejecución de la función async y devuelve el valor resuelto.
+
+Syntaxis
+```bash
+async function name([param[, param[, ... param]]]) {
+   statements
+}
+```
+`name` => El nombre de la función.
+
+`param` => El nombre de un argumento que se debe pasar a la función.
+
+`statements` => Las declaraciones que conforman el cuerpo de la función.
+
+Ejemplo
+```bash
+function resolveAfter2Seconds() {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      resolve('resolved');
+    }, 2000);
+  });
+}
+
+async function asyncCall() {
+  console.log('calling');
+  const result = await resolveAfter2Seconds();
+  console.log(result);
+  // expected output: "resolved"
+}
+
+asyncCall();
+```
+
+### Callbacks
+Explcicación de callbacks
+
+### Events
+Explicación de events.
+
+
+
+## Estructura de la carpeta
 - Labs
 	- CSS
 	- HTML
