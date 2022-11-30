@@ -168,6 +168,34 @@ Explcicación de callbacks
 Explicación de events.
 
 
+## 21/11
+Fetch API. HTTP. JSON. Laboratorio: 'Fetch me a dinner'. Métodos asociados.
+
+### Principios Crud
+```bash
+C = Crear / create
+Read/Get = leer / read
+U = actualizar / update
+D = borrar / delete
+P = patch
+```
+
+### JSON
+```bash
+JSON === "Javascript Object Notation"
+JSON es un formatode datos estandar basado en texto que se utiliza en el desarollo web para enviar y recibir datos.
+JSON es el standard actual para crear aplicaciones tanto nativas como webApps, IOT === Internet of things, VideoJuegos ....
+```
+
+### Métodos Asociados
+
+`RESPONSE.json()` The json() method of the Response interface takes a Response stream and reads it to completion. It returns a promise which resolves with the result of parsing the body text as JSON.
+Note that despite the method being named json(), the result is not JSON but is instead the result of taking JSON as input and parsing it to produce a JavaScript object.
+
+`JSON.parse()` Toma una cadena json y la convierte en un objeto javascript.
+
+`Metodo FECTH!` La fetch API es una interfaz que permite realizar peticiones HTTP asíncronas a servidores desde los navegadores web y que utiliza Promise.
+
 
 ## Estructura de la carpeta
 - Labs
