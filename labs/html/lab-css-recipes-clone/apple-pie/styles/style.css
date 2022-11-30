@@ -22,7 +22,7 @@ section{
 }
 
 header{
-    background-image: url("/labs/html/lab-css-recipes-clone/apple-pie/images/apple-pie.jpg");
+    background-image: url("/apple-pie/images/apple-pie.jpg");
     height: 400px;
     display: flex;
     justify-content: center;
