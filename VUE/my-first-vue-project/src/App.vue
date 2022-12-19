@@ -4,20 +4,23 @@ import TheWelcome from './components/TheWelcome.vue'
 import MyFirstComponentVue from './components/vueBasics/MyFirstComponent.vue';
 // import ConditionalRenderingVue from './components/vueBasics/ConditionalRendering.vue';
 import ConditionalRendering from './components/vueBasics/ConditionalRendering.vue';
+import ParentComponent from './components/11-Events/ParentComponent.vue';
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+    <!-- <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
-    </div>
+    </div> -->
   </header>
 
   <main>
     <!-- <MyFirstComponentVue/> -->
-    <ConditionalRendering/>
+    <!-- <ConditionalRendering/> -->
+
+    <ParentComponent/>
   </main>
 </template>
 
